@@ -1,0 +1,4 @@
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}

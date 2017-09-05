@@ -1,0 +1,10 @@
+*.iml
+*.ipr
+*.iws
+.gradle/
+.idea/
+build/
+out/
+.DS_Store
+.gradletasknamecache
+clover.license

@@ -1,0 +1,3 @@
+test {
+    ext.testSrcDirs = project.sourceSets.test.java.srcDirs
+}

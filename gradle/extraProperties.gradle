@@ -1,0 +1,5 @@
+project.ext {
+    awsSdkVersion = '1.11.119'
+    groovyVersion = '2.4.5'
+    powermockVersion = '1.7.0'
+}

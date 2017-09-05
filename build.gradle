@@ -1,0 +1,24 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+plugins {
+    id 'groovy'
+    id 'idea'
+    id 'java'
+    id 'maven'
+}
+
+apply from: "gradle/extraProperties.gradle" // needs to be before dependencies
+apply from: "gradle/dependencies.gradle"
+apply from: "gradle/javadoc.gradle"
+apply from: "gradle/repositories.gradle"
+apply from: "gradle/sources.gradle"
+apply from: "gradle/tests.gradle"
+apply from: "gradle/artifacts.gradle" // needs to be after javadoc and sources
+
+// Use Java 8 by default
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
